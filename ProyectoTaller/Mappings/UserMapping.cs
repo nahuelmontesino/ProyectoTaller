@@ -14,7 +14,7 @@ namespace API.Mappings
             Id(x => x.Id);
             Map(x => x.Name).Not.Nullable();
             Map(x => x.LastName).Not.Nullable();
-            Table("User");
+            Table("`User`");
         }
     }
 }
