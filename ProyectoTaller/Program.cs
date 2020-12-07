@@ -1,13 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using API;
 using API.Entities;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace ProyectoTaller
 {
@@ -17,7 +12,7 @@ namespace ProyectoTaller
         {
             using (var session = NHibernateHelper.OpenSession())
             {
-                var user = session.Get<User>(1); 
+                //var user = session.Get<User>(1); 
                 using (var transaction = session.BeginTransaction())
                 {
                     var customer = new User
