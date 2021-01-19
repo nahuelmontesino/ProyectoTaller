@@ -17,14 +17,14 @@ namespace ProyectoTaller
                 {
                     var customer = new User
                     {
-                        Name = "Allan",
-                        LastName = "Bomer"
+                        UserName = "Allan",
+                        Password = "Bomer"
                     };
 
                     session.Save(customer);
                     transaction.Commit();
-                    Console.WriteLine("Customer Created: " + customer.Name+ "\t" +
-                       customer.LastName);
+                    Console.WriteLine("Customer Created: " + customer.UserName+ "\t" +
+                       customer.Password);
                 }
 
                 Console.ReadKey();
