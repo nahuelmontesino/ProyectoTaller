@@ -7,9 +7,9 @@ namespace API.Mappings
     {
         public UserMapping()
         {
-            Id(x => x.Id);
-            Map(x => x.Name).Not.Nullable();
-            Map(x => x.LastName).Not.Nullable();
+            Id(x => x.UserName);
+            Map(x => x.Password).Not.Nullable();
+            Map(x => x.Admin).Not.Nullable();
             Table("`User`");
         }
     }
